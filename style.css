@@ -122,3 +122,11 @@ h1 {
     color: #eee;
     text-align: center;
 }
+a:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+button:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
