@@ -63,16 +63,19 @@ h1 {
 .projects {
     display: flex;
     padding: 0px 256px;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 64px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.project img, .project p {
+.project {
     max-width: 150px;
     height: auto;
     text-align: center;
+    margin: 10px;
 }
-.project img {
+.project {
     border: solid #3883F6;
     border-radius: 12px;
 }
