@@ -41,9 +41,10 @@ const projects = document.querySelector(".projects")
 
 for (const project in projectsArr) {
     let projectObj = projectsArr[project]
-    let newProject = document.createElement("img")
-    newProject.setAttribute('src', `Images/${projectObj['src']}`)
-    newProject.setAttribute('name', projectObj['name'])
+    let newProject = document.createElement("div")
+    newProject.textContent = projectObj['name']
+    // newProject.setAttribute('src', `Images/${projectObj['src']}`)
+    // newProject.setAttribute('alt', projectObj['name'])
     newProject.setAttribute('id', projectObj['id'])
     newProject.addEventListener('click', projectObj['url'])
     newProject.classList.add("project")

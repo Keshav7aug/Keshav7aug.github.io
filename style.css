@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .header {
     display: flex;
@@ -70,14 +71,24 @@ h1 {
 }
 
 .project {
-    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    min-height: 200px;
+    min-width: 30%;
     height: auto;
     text-align: center;
     margin: 10px;
+    word-wrap: break-word;
+    /* word-break: break-all; */
 }
 .project {
     border: solid #3883F6;
     border-radius: 12px;
+    font-size: 31px;
+    background-image: url("Images/Background.png");
+    color: red;
 }
 .quote {
     background-color: #E5E7EB;
@@ -132,8 +143,13 @@ a:hover {
     color: blueviolet;
 }
 button:hover {
-    background-color: blueviolet;
+    background-image: url("Images/hover.png");
 }
-.project:hover {
-    background-color: blueviolet;
+#check:hover, .project:hover {
+    background-image: url("Images/hover.png");
+}
+#check {
+    font-size: 31px;
+    background-image: url("Images/Background.png");
+    color: red;
 }
