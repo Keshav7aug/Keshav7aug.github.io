@@ -6,6 +6,9 @@ function Projects(name, imageUrl, url, id) {
     this.id = id
 }
 
+function ChangeImg() {
+    achievement.setAttribute("src",`Images/Achivements/${achievementsArr[N]}`)
+}
 let projectsArr = {
     "ATM": new Projects("ATM POS PIN Using Hand Gestures", 
     "ATM.png", 
@@ -37,6 +40,20 @@ let projectsArr = {
     "https://keshav7aug.github.io/RockPaperScissors/",
     "RPS"),
 }
+
+let achievementsArr = ['KickStart_2022.jpg', 
+'Foobar.jpg',
+'Aerothon.jpg',
+'CodeJam_2022.jpg',
+'HashCode_2022.jpg',
+'KickStart_2021.jpg', 
+'CodeJam_2021.jpg',
+'HackerCup_2021.jpg', 
+'HashCode_2021.jpg',   
+'KickStart_2020.jpg',
+'HackerCup_2020.jpg',    
+]
+const noOfImages = achievementsArr.length
 const projects = document.querySelector(".projects")
 
 for (const project in projectsArr) {
@@ -51,3 +68,14 @@ for (const project in projectsArr) {
     projects.appendChild(newProject)
     console.log(newProject)
 }
+let N = 0
+const achievement = document.querySelector(".achievements img")
+ChangeImg()
+const nextBtn = document.querySelector(".next")
+const prevBtn = document.querySelector(".prev")
+nextBtn.addEventListener('click', function(){
+    N=(N+1)%noOfImages
+    ChangeImg()})
+prevBtn.addEventListener('click', function(){
+    N=(N-1+noOfImages)%noOfImages
+    ChangeImg()})

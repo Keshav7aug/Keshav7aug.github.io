@@ -30,7 +30,7 @@ a {
     display: flex;
     background-color: #1F2937;
     padding: 64px 128px;
-    gap: 48px;
+    gap: 188px;
     color: #eee;
 }
 
@@ -39,9 +39,13 @@ a {
     flex-direction: column;
 }
 .introduction img {
-    width: 50%;
+    width: 30%;
 }
 
+/* .achievements img {
+    width: 60%;
+    height: 100px;
+} */
 button {
     width: fit-content;
     background-color: #3883F6;
@@ -61,7 +65,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-.projects {
+.projects, .achievements {
     display: flex;
     padding: 0px 256px;
     justify-content: center;
@@ -136,7 +140,7 @@ h1 {
     color: #eee;
     text-align: center;
 }
-a:hover, button:hover, .project:hover {
+a:hover, button:hover, .project:hover, .prev:hover, .next:hover {
     cursor: pointer;
 }
 a:hover {
@@ -145,11 +149,26 @@ a:hover {
 button:hover {
     background-image: url("Images/hover.png");
 }
-#check:hover, .project:hover {
+#check:hover, .project:hover, .prev:hover, .next:hover {
     background-image: url("Images/hover.png");
 }
 #check {
     font-size: 31px;
     background-image: url("Images/Background.png");
     color: red;
+}
+.achievement {
+    display: flex;
+    align-items: center;
+}
+.prev, .next {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.achievement img {
+    width: 650px;
+    height: auto;
+}
+.prev, .next {
+    font-size: 250px
 }
