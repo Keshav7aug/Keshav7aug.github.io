@@ -41,7 +41,8 @@ let projectsArr = {
     "RPS"),
 }
 
-let achievementsArr = ['KickStart_2022.jpg', 
+let achievementsArr = ['HackerCup_2022.jpg',
+'KickStart_2022.jpg', 
 'Foobar.jpg',
 'Aerothon.jpg',
 'CodeJam_2022.jpg',
